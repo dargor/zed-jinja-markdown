@@ -1,0 +1,4 @@
+name = "Jinja Markdown (Python)"
+grammar = "jinja"
+hidden = true
+highlight_query = "../jinja/highlights.scm"

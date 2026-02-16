@@ -1,0 +1,3 @@
+name = "Jinja Markdown (Markdown Inline)"
+grammar = "markdown_inline"
+hidden = true

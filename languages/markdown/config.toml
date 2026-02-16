@@ -1,0 +1,4 @@
+name = "Jinja flavored Markdown"
+grammar = "markdown"
+path_suffixes = ["md.j2"]
+block_comment = { start = "{%", prefix = "", end = "%}", tab_size = 0 }

@@ -1,0 +1,22 @@
+id = "jinja-markdown"
+name = "Jinja flavored Markdown"
+version = "0.0.1"
+schema_version = 1
+authors = ["Gabriel Linder <linder.gabriel@gmail.com>"]
+description = "Jinja syntax highlighting with Markdown support"
+repository = "https://github.com/dargor/zed-jinja-markdown"
+
+[grammars.markdown]
+repository = "https://github.com/tree-sitter-grammars/tree-sitter-markdown"
+commit = "aca7767daa8bbe3daddafc312c34be88383c828b"
+path = "tree-sitter-markdown"
+
+[grammars.markdown_inline]
+repository = "https://github.com/tree-sitter-grammars/tree-sitter-markdown"
+commit = "aca7767daa8bbe3daddafc312c34be88383c828b"
+path = "tree-sitter-markdown-inline"
+
+[grammars.jinja]
+repository = "https://github.com/cathaysia/tree-sitter-jinja"
+commit = "7bd0422c6a57aaabfee8603502d7708d0a536f5f"
+path = "tree-sitter-jinja"
