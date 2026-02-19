@@ -5,7 +5,14 @@
   (info_string
     (language) @injection.language)
   (code_fence_content) @injection.content
-  (#not-match? @injection.language "^(python|py)$"))
+  (#not-match? @injection.language "^(bash|sh|python|py)$"))
+
+(fenced_code_block
+  (info_string
+    (language) @injection.language)
+  (code_fence_content) @injection.content
+  (#match? @injection.language "^(bash|sh)$")
+  (#set! injection.language "Jinja Markdown (Bash)"))
 
 (fenced_code_block
   (info_string
