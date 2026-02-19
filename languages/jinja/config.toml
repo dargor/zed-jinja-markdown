@@ -1,4 +1,4 @@
 name = "Jinja"
 grammar = "jinja"
 path_suffixes = ["jinja", "jinja2", "j2"]
-block_comment = { start = "{%", prefix = "", end = "%}", tab_size = 0 }
+block_comment = { start = "{#", prefix = "", end = "#}", tab_size = 0 }
