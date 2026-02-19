@@ -1,0 +1,161 @@
+# Heading 1
+
+## Heading 2
+
+### Heading 3
+
+#### Heading 4
+
+##### Heading 5
+
+###### Heading 6
+
+Heading 1
+=========
+
+Heading 2
+---------
+
+**Markdown** is fine to write prompts, and **Jinja** adds much needed flexibility. Why not combine them ?
+
+<!-- This is a markdown comment, it will be visible in the rendered output -->
+
+{# This is a jinja comment, it will not be visible in the rendered output #}
+
+Let's try **something {{ like.value | safe }} this**, does it work ? And *this {{ as.value | safe }} well* ? What `about {{ something.value | safe }} like` this ?
+
+<!-- templates should be supported here: {{ comment.value | tojson }} -->
+
+{# templates should not be supported here: {{ comment.value | tojson }} #}
+
+Inline HTML/XML (*useful to structure prompts*):
+
+<quiche>
+    <appareil>
+        <ingredients>
+            <ingredient>
+                <name>{% if toto %}tomatoes{% else %}potatoes{% endif %}</name>
+                <quantity>2</quantity>
+            </ingredient>
+            <ingredient>
+                <name>onions</name>
+                <quantity>1</quantity>
+            </ingredient>
+        </ingredients>
+    </appareil>
+</quiche>
+
+Tables are supported as well:
+
+| **Header**  | {{ Header.value | safe }} |
+| ----------- | ------------------------- |
+| *Row A*     | {{ Row_A.value | safe }}  |
+| `Row B`     | {{ Row_B.value | safe }}  |
+| _Row C_     | {{ Row_C.value | safe }}  |
+| __Row D__   | {{ Row_D.value | safe }}  |
+
+Tables and Jinja do not work well together, due to the `|` character they both use. Should not be an issue though, as Jinja pipes will disappear after rendering.
+
+What would markdown be without fenced code blocks ?
+
+```
+{# this should be a comment #}
+print("Hello World!")
+{% for item in items %}
+    {{ item.value }}
+{% endfor %}
+# this should be a comment as well
+print("Bye World!")
+{# this should be a comment #}
+```
+
+```txt
+{# this should be a comment #}
+print("Hello World!")
+{% for item in items %}
+    {{ item.value }}
+{% endfor %}
+# this should be a comment as well
+print("Bye World!")
+{# this should be a comment #}
+```
+
+```jinja
+{# this should be a comment #}
+print("Hello World!")
+{% for item in items %}
+    {{ item.value }}
+{% endfor %}
+# this should be a comment as well
+print("Bye World!")
+{# this should be a comment #}
+```
+
+```sh
+{# this should be a comment #}
+print("Hello World!")
+{% for item in items %}
+    {{ item.value }}
+{% endfor %}
+# this should be a comment as well
+print("Bye World!")
+{# this should be a comment #}
+```
+
+```bash
+{# this should be a comment #}
+print("Hello World!")
+{% for item in items %}
+    {{ item.value }}
+{% endfor %}
+# this should be a comment as well
+print("Bye World!")
+{# this should be a comment #}
+```
+
+```py
+{# this should be a comment #}
+print("Hello World!")
+{% for item in items %}
+    {{ item.value }}
+{% endfor %}
+# this should be a comment as well
+print("Bye World!")
+{# this should be a comment #}
+```
+
+```python {.highlight}
+{# this should be a comment #}
+print("Hello World!")
+{% for item in items %}
+    {{ item.value }}
+{% endfor %}
+# this should be a comment as well
+print("Bye World!")
+{# this should be a comment #}
+```
+
+```xml
+<quiche>
+    <appareil>
+        <ingredients>
+            <ingredient>
+                <name>{% if toto %}tomatoes{% else %}potatoes{% endif %}</name>
+                <quantity>2</quantity>
+            </ingredient>
+            <ingredient>
+                <name>onions</name>
+                <quantity>1</quantity>
+            </ingredient>
+        </ingredients>
+    </appareil>
+</quiche>
+```
+
+Finally, let's try a [link to somewhere](https://example.com) with `code`, **bold**, _italic_, ~~strikethrough~~, and a [reference][1]!
+
+What about images ? ![Alt text](https://example.com/image.jpg)
+
+---
+
+[1]: https://example.com "Example Title"
