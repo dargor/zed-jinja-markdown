@@ -1,6 +1,10 @@
 ((inline) @injection.content
   (#set! injection.language "Jinja Markdown (Markdown Inline)"))
 
+((inline) @injection.content
+  (#match? @injection.content "\\{[{%#]")
+  (#set! injection.language "Jinja"))
+
 (fenced_code_block
   (info_string
     (language) @injection.language)
