@@ -1,3 +1,3 @@
-((code_span) @injection.content
+((inline) @injection.content
   (#match? @injection.content "\\{[{%#]")
   (#set! injection.language "Jinja"))
