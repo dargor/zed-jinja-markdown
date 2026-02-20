@@ -1,6 +1,6 @@
 # Jinja flavored Markdown for Zed
 
-A [Zed](https://zed.dev) extension that provides syntax highlighting for **Jinja** templating language combined with **Markdown** support.
+A [Zed](https://zed.dev) extension that provides syntax highlighting for **Jinja** templating language combined with **Markdown**.
 
 ## Purpose
 
@@ -8,7 +8,7 @@ When working with LLM prompts, you often need to inject dynamic content. While L
 
 Instead of manually handling these injections, why not leverage Jinja's powerful templating capabilities ? Jinja can efficiently manage context injection, including conversation history, tool definitions, and user queries, with features like loops and conditionals that make the whole process much more manageable.
 
-An additional benefit: prompts can now be version-controlled separately from code, eliminating the need for mixed content.
+An additional benefit: prompts can now be version-controlled separately from code.
 
 ## Installation
 
