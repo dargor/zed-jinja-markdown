@@ -10,6 +10,20 @@ Instead of manually handling these injections, why not leverage Jinja's powerful
 
 An additional benefit: prompts can now be version-controlled separately from code.
 
+## Examples
+
+**Markdown only**: nice but hard to read
+
+<img src="images/markdown.png" width="380" height="161">
+
+**Jinja only**: easy to read but ugly
+
+<img src="images/jinja.png" width="380" height="161">
+
+**Jinja flavored Markdown**: best of both worlds !
+
+<img src="images/both.png" width="380" height="161">
+
 ## Installation
 
 _NB: the extension is not yet published, install as a dev extension for now._
