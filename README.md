@@ -26,7 +26,7 @@ An additional benefit: prompts can now be version-controlled separately from cod
 
 ## Installation
 
-_NB: the extension is not yet published, install as a dev extension for now._
+_NB: the extension is not yet [published](https://github.com/zed-industries/extensions/pull/4924), install as a dev extension for now._
 
 Install this extension directly in Zed:
 
