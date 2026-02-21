@@ -1,6 +1,6 @@
 id = "jinja-markdown"
 name = "Jinja flavored Markdown"
-version = "0.0.1"
+version = "0.0.2"
 schema_version = 1
 authors = ["Gabriel Linder <linder.gabriel@gmail.com>"]
 description = "Jinja syntax highlighting with Markdown support"
