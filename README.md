@@ -14,15 +14,15 @@ An additional benefit: prompts can now be version-controlled separately from cod
 
 **Markdown only**: nice but hard to read
 
-<img src="images/markdown.png" width="380" height="161">
+![Markdown only](images/markdown.png)
 
 **Jinja only**: easy to read but ugly
 
-<img src="images/jinja.png" width="380" height="161">
+![Jinja only](images/jinja.png)
 
 **Jinja flavored Markdown**: best of both worlds !
 
-<img src="images/both.png" width="380" height="161">
+![Jinja flavored Markdown](images/both.png)
 
 ## Installation
 
