@@ -18,5 +18,5 @@ path = "tree-sitter-markdown-inline"
 
 [grammars.jinja]
 repository = "https://github.com/cathaysia/tree-sitter-jinja"
-commit = "7bd0422c6a57aaabfee8603502d7708d0a536f5f"
+commit = "40bec50a9a0f1228226ed53be3f87f01da94a959"
 path = "tree-sitter-jinja"
