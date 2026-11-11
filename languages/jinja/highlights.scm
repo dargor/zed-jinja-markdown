@@ -125,9 +125,9 @@
         (primary_expression
           (identifier) @variable.parameter)))))
 
-(expression
+(primary_expression
   "."
-  (expression)+ @variable.member)
+  (identifier) @variable.member)
 
 (assignment_expression
   "."
